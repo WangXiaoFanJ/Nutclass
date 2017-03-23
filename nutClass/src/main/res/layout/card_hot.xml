@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll_root"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/bg_main_activity_grey"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/ll_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/common_3"
+            android:layout_marginLeft="@dimen/common_15"
+            android:layout_marginTop="@dimen/common_8"
+            android:text="TextView"
+            android:textColor="@color/color_70"
+            android:textSize="@dimen/font_12" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/height_card_border_divider"
+            android:background="@color/card_border_color_10" />
+    </LinearLayout>
+
+    <TableLayout
+        android:id="@+id/tb_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bg_main_activity_white" >
+    </TableLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_more"
+        android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/height_btn"
+        android:orientation="vertical" >
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/height_card_border_divider"
+            android:background="@color/card_border_color_10" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/text_foot_more_load"
+            android:textColor="@color/color_70"
+            android:textSize="@dimen/font_12" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/height_card_border_divider"
+        android:layout_marginBottom="@dimen/common_5"
+        android:background="@color/card_border_color_10" />
+
+</LinearLayout>

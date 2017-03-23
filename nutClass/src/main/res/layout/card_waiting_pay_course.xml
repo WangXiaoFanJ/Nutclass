@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/bg_main_activity_grey"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/common_10"
+            android:paddingTop="@dimen/common_5">
+
+            <ImageView
+                android:id="@+id/iv_icon"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginLeft="@dimen/common_10"
+                android:scaleType="fitXY" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/common_10"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/common_2"
+                    android:singleLine="true"
+                    android:text="红黄蓝亲子园亲自课时包"
+                    android:textColor="@color/color_80"
+                    android:textSize="@dimen/font_12" />
+
+                <TextView
+                    android:id="@+id/tv_xiaoqu_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/common_8"
+                    android:text="校区：红黄蓝双井校区"
+                    android:singleLine="true"
+                    android:textColor="@color/color_40"
+                    android:textSize="@dimen/font_11" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/common_8">
+
+                    <TextView
+                        android:id="@+id/tv_price_goods"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="10800"
+                        android:textColor="@color/color_red_20"
+                        android:textSize="@dimen/font_12" />
+
+                    <TextView
+                        android:id="@+id/tv_attr_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="@dimen/common_10"
+                        android:text="48课时"
+                        android:textColor="@color/color_80"
+                        android:textSize="@dimen/font_12" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:background="@color/bg_main_activity_white"
+            android:id="@+id/ll_plus_price_item"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll_root"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/height_65"
+    android:background="@color/bg_main_activity_grey"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/ll_container"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/bg_main_activity_white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/common_15"
+        android:paddingRight="@dimen/common_15" >
+
+        <ImageView
+            android:id="@+id/iv_img"
+            android:layout_width="@dimen/height_40"
+            android:layout_height="@dimen/height_40"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_launcher" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/common_5"
+            android:scaleType="fitXY"
+            android:src="@drawable/icon_release_failure" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/common_5"
+            android:layout_weight="1"
+            android:text="@string/text_send_failure"
+            android:textColor="@color/font_color_pink"
+            android:textSize="@dimen/font_12" />
+
+        <Button
+            android:id="@+id/btn_send"
+            android:layout_width="@dimen/width_67"
+            android:layout_height="@dimen/height_25"
+            android:layout_marginRight="@dimen/common_10"
+            android:background="@drawable/selector_btn_common_pink"
+            android:gravity="center"
+            android:text="@string/text_send_again"
+            android:textColor="@color/color_0"
+            android:textSize="@dimen/font_12" />
+
+        <ImageView
+            android:id="@+id/iv_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:src="@drawable/selector_draft_delete" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/height_card_border_divider"
+        android:layout_marginBottom="@dimen/common_5"
+        android:background="@color/card_border_color_10" />
+
+</LinearLayout>

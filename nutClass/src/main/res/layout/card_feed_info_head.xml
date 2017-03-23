@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_main_activity_grey"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_0"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/ll_author"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/common_10"
+            android:paddingLeft="@dimen/common_15"
+            android:paddingRight="@dimen/common_15"
+            android:paddingTop="@dimen/common_20" >
+
+            <com.dev.nutclass.view.RoundedImageView
+                android:id="@+id/iv_icon"
+                android:layout_width="@dimen/item_feed_icon_size"
+                android:layout_height="@dimen/item_feed_icon_size"
+                android:layout_centerInParent="true"
+                android:src="@drawable/porfile_default_male"
+                app:riv_oval="true" />
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/common_10"
+                android:layout_weight="1"
+                android:text="用户名"
+                android:textColor="@color/font_color_pink"
+                android:textSize="@dimen/font_16" />
+
+            <Button
+                android:id="@+id/btn_follow"
+                android:layout_width="@dimen/width_like_btn"
+                android:layout_height="@dimen/height_follow_btn"
+                android:background="@drawable/selector_btn_common_pink"
+                android:gravity="center"
+                android:text="@string/text_follow"
+                android:textColor="@color/color_0"
+                android:textSize="@dimen/font_12" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_img"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_marginBottom="@dimen/common_15"
+            android:visibility="visible" >
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/common_10"
+            android:layout_marginLeft="@dimen/common_15"
+            android:layout_marginRight="@dimen/common_15"
+            
+            android:text="desc"
+            android:textColor="@color/color_90"
+            android:textSize="@dimen/font_14" />
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/common_17"
+            android:layout_marginLeft="@dimen/common_15"
+            android:layout_marginRight="@dimen/common_15"
+            android:text="发布于2015-5-5"
+            android:textColor="@color/color_30"
+            android:textSize="@dimen/font_12" />
+
+        <LinearLayout
+            android:id="@+id/ll_hospital_doctor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/common_15"
+            android:paddingRight="@dimen/common_15" >
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_card_border_divider"
+                android:background="@color/card_border_color_10" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_release_hospital"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:id="@+id/ll_hospital"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:id="@+id/iv_hospital"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/icon_hospital_selected" />
+
+                    <TextView
+                        android:id="@+id/tv_hospital"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/common_5"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:text="医院"
+                        android:textColor="@color/font_color_pink"
+                        android:textSize="@dimen/font_12" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_doctor"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:id="@+id/iv_doctor"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/icon_doctor_selected" />
+
+                    <TextView
+                        android:id="@+id/tv_doctor"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/common_5"
+                        android:text="医生"
+                        android:textColor="@color/font_color_pink"
+                        android:textSize="@dimen/font_12" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_card_border_divider"
+            android:background="@color/card_border_color_10" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_like"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tv_like_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/common_5"
+            android:layout_marginTop="@dimen/common_15"
+            android:paddingLeft="@dimen/common_15"
+            android:paddingRight="@dimen/common_15"
+            android:text="赞（100）" />
+
+        <LinearLayout
+            android:id="@+id/ll_likers"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/color_0"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/common_5"
+            android:paddingLeft="@dimen/common_15"
+            android:paddingRight="@dimen/common_15"
+            android:paddingTop="@dimen/common_5" >
+
+            <com.dev.nutclass.view.LikerListView
+                android:id="@+id/view_like_list"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+            </com.dev.nutclass.view.LikerListView>
+
+            <ImageView
+                android:id="@+id/iv_like"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/common_5"
+                android:background="@drawable/feed_info_like"
+                android:gravity="center" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_comment_num"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/common_5"
+        android:layout_marginTop="@dimen/common_15"
+        android:paddingLeft="@dimen/common_15"
+        android:paddingRight="@dimen/common_15"
+        android:text="评论（100）" />
+
+</LinearLayout>

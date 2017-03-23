@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   
+    android:id="@+id/ll_root"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/bg_main_activity_grey"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:id="@+id/ll_left"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_weight="1"
+        android:background="@drawable/radius_white_bg"
+        android:orientation="vertical"
+        android:padding="5dp" >
+
+        <com.dev.nutclass.view.SquareImageView
+            android:id="@+id/iv_pic_left"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_launcher" />
+
+        <TextView
+            android:id="@+id/tv_desc_left"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:maxLines="2"
+            
+            android:text="adfadfas"
+            android:textColor="@color/color_60"
+            android:textSize="@dimen/font_14" />
+
+        <TextView
+            android:id="@+id/tv_price_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:text="价格"
+            android:textColor="#ff0000"
+            android:textSize="@dimen/font_14" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_right"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_weight="1"
+        android:background="@drawable/radius_white_bg"
+        android:orientation="vertical"
+        android:padding="5dp" >
+
+        <com.dev.nutclass.view.SquareImageView
+            android:id="@+id/iv_pic_right"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_launcher" />
+
+        <TextView
+            android:id="@+id/tv_desc_right"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+             android:maxLines="2"
+            android:text="adfadfasadfadfasdfadfasadf我是中国人"
+            android:textColor="@color/color_60"
+            android:textSize="@dimen/font_14" />
+
+        <TextView
+            android:id="@+id/tv_price_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:text="价格"
+            android:textColor="#ff0000"
+            android:textSize="@dimen/font_14" />
+    </LinearLayout>
+
+</LinearLayout>

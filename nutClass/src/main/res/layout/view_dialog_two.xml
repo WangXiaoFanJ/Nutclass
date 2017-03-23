@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll_root"
+    android:layout_width="@dimen/width_dialog"
+    android:layout_gravity="center"
+    android:layout_height="wrap_content"
+    android:background="@color/color_0"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:paddingBottom="@dimen/common_15"
+    android:paddingLeft="@dimen/common_15"
+    android:paddingRight="@dimen/common_15" >
+
+    <TextView
+        android:id="@+id/tv_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/common_30"
+        android:layout_marginTop="@dimen/common_30"
+        android:text="是否删除该条状态？"
+        android:textColor="@color/color_90"
+        android:textSize="@dimen/font_14" />
+
+    <LinearLayout
+        android:id="@+id/ll_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_ok"
+            android:layout_width="@dimen/width_dialog_btn"
+            android:layout_height="@dimen/height_btn"
+            android:layout_marginRight="@dimen/common_5"
+            android:background="@drawable/selector_btn_common_pink"
+            android:gravity="center"
+            android:text="@string/text_ok"
+            android:textColor="@color/color_0"
+            android:textSize="@dimen/font_14" />
+
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_width="@dimen/width_dialog_btn"
+            android:layout_height="@dimen/height_btn"
+            android:layout_marginLeft="@dimen/common_5"
+            android:background="@drawable/selector_btn_common_pink"
+            android:gravity="center"
+            android:text="@string/text_cancel"
+            android:textColor="@color/color_90"
+            android:textSize="@dimen/font_14" />
+    </LinearLayout>
+
+</LinearLayout>

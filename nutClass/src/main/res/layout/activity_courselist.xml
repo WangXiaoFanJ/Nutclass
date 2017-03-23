@@ -1,0 +1,110 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:attr="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll_root"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/bg_main_activity_grey"
+    android:orientation="vertical" >
+
+    <com.dev.nutclass.view.TitleBar
+        android:id="@+id/tb_title"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/height_titlebar"
+        attr:left_type="1"
+        attr:middle_text="购买课程"
+        attr:right_type1="13" />
+
+    <include layout="@layout/view_filter" />
+
+    <ImageView
+        android:id="@+id/iv_head"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/height_banner"
+        android:layout_centerInParent="true"
+        android:scaleType="fitXY"
+        android:visibility="gone" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <com.cjj.MaterialRefreshLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/refresh"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:isLoadMore="true"
+            app:overlay="false"
+            app:wave_show="false" >
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/card_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/bg_main_activity_grey"
+                android:paddingTop="@dimen/common_5" />
+        </com.cjj.MaterialRefreshLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_filter_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:visibility="gone" >
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/filter_list"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/bg_main_activity_grey"
+                android:paddingTop="@dimen/common_5" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/filter_list2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/bg_main_activity_grey"
+                android:paddingTop="@dimen/common_5" />
+           
+        </LinearLayout>
+    </FrameLayout>
+    <LinearLayout
+        android:id="@+id/ll_input"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_0"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/common_5"
+        android:paddingLeft="@dimen/common_15"
+        android:paddingRight="@dimen/common_15"
+        android:paddingTop="@dimen/common_5"
+        android:visibility="gone"
+        >
+
+        <EditText
+            android:id="@+id/edit_input"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/height_btn"
+            android:layout_weight="1"
+            android:background="@drawable/selector_edit_common_grey"
+            android:textColor="@color/color_30"
+            android:textSize="@dimen/font_14" />
+
+        <TextView
+            android:id="@+id/btn_input"
+            android:layout_width="@dimen/width_like_btn"
+            android:layout_height="@dimen/height_btn"
+            android:layout_marginLeft="@dimen/common_5"
+            android:background="@drawable/selector_btn_common_pink"
+            android:gravity="center"
+            android:text="@string/text_send"
+            android:textColor="@color/color_0"
+            android:textSize="@dimen/font_14" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,526 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll_root"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/bg_main_activity_white"
+    android:gravity="center_vertical"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/ll_banner"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/common_10"
+        android:layout_marginTop="@dimen/common_12"
+        android:gravity="left"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:text="尼克魔力英语"
+            android:layout_marginLeft="@dimen/common_13"
+            android:textColor="@color/color_80"
+            android:textSize="@dimen/font_14" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/common_5"
+            android:src="@drawable/hospital_flag_v"
+            android:visibility="visible" />
+    </LinearLayout>
+
+    <RatingBar
+        android:id="@+id/rb_rating"
+        style="@style/MyRatingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="@dimen/common_6"
+        android:clickable="false"
+        android:isIndicator="true"
+        android:numStars="5"
+        android:rating="3"
+        android:stepSize="1"
+        android:visibility="gone" />
+    <LinearLayout
+        android:id="@+id/ll_mark_action"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/common_14"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:visibility="gone"
+      >
+        <ImageView
+            android:layout_marginLeft="@dimen/common_13"
+            android:id="@+id/iv_mark_action"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="6dp"/>
+        <TextView
+            android:id="@+id/tv_mark_action"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/font_11"
+            android:text="双十一大折扣"
+            android:textColor="@color/color_dark_red"
+            />
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginBottom="@dimen/common_6"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tv_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/common_15"
+            android:layout_marginRight="@dimen/common_15"
+            android:singleLine="true"
+            android:text="￥1234元"
+            android:textColor="@color/color_dark_red"
+            android:textSize="@dimen/font_17" />
+        <!--android:background="@drawable/radius_red_with_stroke_bg"-->
+        <TextView
+            android:id="@+id/tv_youhui"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:padding="@dimen/common_5"
+            android:singleLine="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:text="返200元购物卡"
+            android:textColor="#ff0000"
+            android:textSize="@dimen/font_12" />
+        <TextView
+            android:id="@+id/tv_get_bonus"
+            android:layout_width="80dp"
+            android:layout_height="18dp"
+            android:text="点击领取"
+            android:layout_marginRight="10dp"
+            android:gravity="center"
+            android:textSize="10sp"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/color_white"
+            android:background="@drawable/radius_red_bg"
+            />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/view_divider"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/line_size"
+        android:background="@color/list_divider_line" />
+     <LinearLayout
+        android:id="@+id/ll_flag"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/common_15"
+        android:paddingBottom="@dimen/common_15"
+        android:orientation="vertical" >
+    </LinearLayout>
+     <View
+        
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/line_size"
+        android:background="@color/list_divider_line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left|center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/common_15"
+        android:paddingRight="@dimen/common_15" >
+
+        <TextView
+            
+            android:layout_width="@dimen/common_50"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|left"
+            android:singleLine="true"
+            android:text="课时："
+            android:textColor="@color/color_60"
+            android:textSize="@dimen/font_12" />
+
+        <HorizontalScrollView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/common_10"
+            android:layout_marginTop="@dimen/common_10"
+            android:layout_weight="1"
+            android:scrollbars="none" >
+
+            <LinearLayout
+                android:id="@+id/ll_course_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal" >
+            </LinearLayout>
+        </HorizontalScrollView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/common_12"
+        android:layout_marginTop="@dimen/common_12"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/common_15"
+        android:paddingRight="@dimen/common_15" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="@dimen/common_10"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="@dimen/common_50"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical|left"
+                android:singleLine="true"
+                android:text="校区："
+                android:textColor="@color/color_60"
+                android:textSize="@dimen/font_12" />
+
+            <TextView
+                android:id="@+id/tv_school_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical|left"
+                android:singleLine="true"
+                android:text="北京市西程序光范门外大街168号"
+                android:textColor="@color/color_60"
+                android:textSize="@dimen/font_12" />
+
+            <ImageView
+                android:id="@+id/iv_nav"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/common_15"
+                android:padding="5dp"
+                 
+                android:src="@drawable/icon_arrow_right"
+                android:visibility="visible" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="@dimen/common_10"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="@dimen/common_50"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical|left"
+                android:singleLine="true"
+                android:text="地址："
+                android:paddingRight="5dp"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:textColor="@color/color_60"
+                android:textSize="@dimen/font_12" />
+
+            <TextView
+                android:id="@+id/tv_school_address"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical|left"
+                android:singleLine="true"
+                android:text="北京市西程序光范门外大街168号"
+                android:textColor="@color/color_60"
+                android:textSize="@dimen/font_12" />
+        </LinearLayout>
+        <!--<RelativeLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:gravity="center_vertical"-->
+            <!--android:layout_marginBottom="@dimen/common_10">-->
+            <!--<TextView-->
+                <!--android:id="@+id/tv_cu"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="促："-->
+                <!--android:layout_marginRight="25dp"-->
+                <!--android:textSize="@dimen/font_12"-->
+                <!--android:textColor="@color/color_60"/>-->
+            <!--<TextView-->
+                <!--android:layout_toRightOf="@id/tv_cu"-->
+                <!--android:id="@+id/tv_bonus_name"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="优惠券（）"-->
+                <!--android:singleLine="true"-->
+                <!--android:textSize="@dimen/font_12"-->
+                <!--android:textColor="@color/color_60"/>-->
+            <!--<TextView-->
+                <!--android:id="@+id/tv_get_bonus"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="点击领取"-->
+                <!--android:paddingTop="3dp"-->
+                <!--android:paddingBottom="3dp"-->
+                <!--android:paddingRight="10dp"-->
+                <!--android:paddingLeft="10dp"-->
+                <!--android:textSize="12sp"-->
+                <!--android:layout_alignParentRight="true"-->
+                <!--android:textColor="@color/color_white"-->
+                <!--android:background="@drawable/radius_red_bg"-->
+                <!--/>-->
+        <!--</RelativeLayout>-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="@dimen/common_10"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical|left"
+                android:singleLine="true"
+                android:text="支付方式"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:textColor="@color/color_60"
+                android:textSize="@dimen/font_12" />
+
+            <TextView
+                android:layout_marginLeft="5dp"
+                android:id="@+id/tv_pay1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:drawableLeft="@drawable/icon_pay_ali"
+                android:drawablePadding="5dp"
+                android:gravity="left"
+                android:singleLine="true"
+                android:text="支付宝"
+                android:textColor="@color/color_60"
+                android:textSize="@dimen/font_12" />
+
+            <TextView
+                android:id="@+id/tv_pay2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:drawableLeft="@drawable/icon_pay_wx"
+                android:drawablePadding="5dp"
+                android:gravity="left"
+                android:singleLine="true"
+                android:text="微信"
+                android:textColor="@color/color_60"
+                android:textSize="@dimen/font_12" />
+
+            <TextView
+                android:id="@+id/tv_pay3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:drawableLeft="@drawable/icon_pay_credit"
+                android:drawablePadding="5dp"
+                android:gravity="left"
+                android:singleLine="true"
+                android:text="信用卡分期"
+                android:textColor="@color/color_60"
+                android:textSize="@dimen/font_12" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/line_size"
+        android:background="@color/list_divider_line" />
+
+    <LinearLayout
+        android:id="@+id/ll_desc_container"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_course_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|left"
+            android:paddingBottom="@dimen/common_10"
+            android:paddingLeft="@dimen/common_15"
+            android:paddingRight="@dimen/common_15"
+            android:paddingTop="@dimen/common_10"
+            android:singleLine="false"
+            android:text="课程详情"
+            android:textColor="@color/color_60"
+            android:textSize="@dimen/font_12" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/common_15"
+            android:layout_marginRight="@dimen/common_15"
+                android:padding="5dp"
+            android:src="@drawable/icon_arrow_right" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingBottom="@dimen/common_10"
+            android:paddingLeft="@dimen/common_15"
+            android:paddingRight="@dimen/common_15"
+            android:paddingTop="@dimen/common_10"
+            android:singleLine="false"
+            android:text="加价购"
+            android:textColor="@color/color_60"
+            android:textSize="@dimen/font_12" />
+    </LinearLayout>
+    <LinearLayout
+        android:background="@color/bg_main_activity_white"
+        android:id="@+id/ll_plus_price_buy"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll_plus_price_more"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingBottom="@dimen/common_10"
+            android:paddingLeft="@dimen/common_15"
+            android:paddingRight="@dimen/common_15"
+            android:paddingTop="@dimen/common_10"
+            android:singleLine="false"
+            android:text="点击查看更多"
+            android:textColor="@color/color_60"
+            android:textSize="@dimen/font_12" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll_fold_plus_price"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingBottom="@dimen/common_10"
+            android:paddingLeft="@dimen/common_15"
+            android:paddingRight="@dimen/common_15"
+            android:paddingTop="@dimen/common_10"
+            android:singleLine="false"
+            android:text="点击收起"
+            android:textColor="@color/color_60"
+            android:textSize="@dimen/font_12" />
+    </LinearLayout>
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/line_size"
+        android:background="@color/list_divider_line" />
+    
+    <LinearLayout
+        android:id="@+id/ll_course_more"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|left"
+            android:paddingBottom="@dimen/common_10"
+            android:paddingLeft="@dimen/common_15"
+            android:paddingRight="@dimen/common_15"
+            android:paddingTop="@dimen/common_10"
+            android:singleLine="false"
+            android:text="更多课程"
+            android:textColor="@color/color_60"
+            android:textSize="@dimen/font_12" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|left"
+            
+            android:singleLine="false"
+            android:text="查看更多"
+            android:visibility="gone"
+            android:textColor="@color/color_60"
+            android:textSize="@dimen/font_12" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             
+            android:layout_marginRight="@dimen/common_15"
+            android:padding="5dp"
+            android:src="@drawable/icon_arrow_right" />
+    </LinearLayout>
+    
+     <LinearLayout
+        android:background="@color/bg_main_activity_white"
+        android:id="@+id/ll_course_other"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"        
+        android:orientation="vertical" >
+       
+    </LinearLayout>
+
+</LinearLayout>

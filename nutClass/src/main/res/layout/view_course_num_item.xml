@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll_root"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tv_course_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="24节课"
+        android:paddingLeft="@dimen/common_2"
+        android:paddingRight="@dimen/common_2"
+        android:paddingTop="@dimen/common_1_5"
+        android:paddingBottom="@dimen/common_1_5"
+        android:textColor="@color/color_60"
+        android:textSize="@dimen/font_12" />
+
+</LinearLayout>

@@ -1,0 +1,12 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/content_layout"
+    android:layout_width="fill_parent"
+    android:background="@color/bg_main_activity_grey"
+    android:layout_height="fill_parent" >
+    
+	<com.dev.nutclass.view.ProgressWebView
+	    android:id="@+id/webview"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"/>
+    
+</RelativeLayout>

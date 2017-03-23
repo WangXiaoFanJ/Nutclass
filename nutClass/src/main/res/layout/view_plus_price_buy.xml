@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="@dimen/common_5"
+    android:layout_marginRight="@dimen/common_5"
+    android:orientation="horizontal">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="@dimen/common_10">
+        <CheckBox
+            android:id="@+id/checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/common_5"
+            style="@style/CustomCheckboxTheme"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true" />
+    </LinearLayout>
+
+<ImageView
+    android:id="@+id/iv_img_url"
+    android:layout_width="@dimen/height_75"
+    android:layout_height="@dimen/height_75"
+    android:layout_marginLeft="@dimen/common_8"
+    android:src="@drawable/icon_default_new"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/common_5"
+        android:orientation="vertical"
+        android:gravity="center_vertical">
+        <TextView
+            android:id="@+id/tv_goods_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="亲亲袋鼠脑袋课程"
+            android:maxLines="2"
+            android:layout_marginTop="@dimen/common_2"
+            android:textSize="@dimen/font_12"
+            android:textColor="@color/color_80"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/common_3">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="市场价："
+                android:textColor="@color/color_text_normal"
+                android:textSize="@dimen/font_12"
+                />
+            <TextView
+                android:id="@+id/tv_goods_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="9900"
+                android:textColor="#c20806"
+                android:textSize="@dimen/font_12"/>
+        </LinearLayout>
+            <TextView
+                android:id="@+id/tv_goods_cur_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="-"
+                android:layout_marginTop="@dimen/common_3"
+                android:textColor="#c20806"
+                android:textSize="@dimen/font_14"/>
+
+    </LinearLayout>
+</LinearLayout>

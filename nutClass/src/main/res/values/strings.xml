@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">课比课</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- tips********************************************** -->
+    <!-- storage -->
+    <string name="tip_storage_not_enough">内存不足</string>
+    <string name="tip_storage_no_sdcard">请插入SCard</string>
+
+    <!-- net img -->
+    <string name="tip_net_img_upload_start">图片开始上传</string>
+    <string name="tip_net_img_upload_running">图片正在上传</string>
+    <string name="tip_net_img_upload_success">图片上传成功</string>
+    <string name="tip_net_img_upload_failure">图片上传失败</string>
+    <string name="tip_net_img_upload_update">图片更新成功</string>
+
+    <!-- net load -->
+    <string name="tip_net_req_success">请求成功</string>
+    <string name="tip_net_req_failure">请求失败</string>
+    <string name="tip_modify_success">修改成功</string>
+    <string name="tip_modify_failure">修改失败</string>
+    <string name="tip_net_exeception">网络连接异常</string>
+
+    <!-- activity -->
+    <string name="tip_activity_data_error">数据错误</string>
+
+    <!-- progress tip -->
+    <string name="progress_wait">请稍等</string>
+    <string name="progress_loading">发布中，请稍后</string>
+
+    <!-- text ************************************************ -->
+    <string name="text_choose_title">请选择图片</string>
+    <string name="text_next_step">下一步</string>
+    <string name="text_complete_step">完成</string>
+    <string name="text_not_select_doctor">暂不选择医生</string>
+    <string name="text_self_defined">自定义添加</string>
+    <string name="text_delete_step">删除</string>
+    <string name="text_follow">加关注</string>
+    <string name="text_send">发送</string>
+    <string name="text_follow_ed">已关注</string>
+    <string name="text_like">赞</string>
+    <string name="text_comment">评论</string>
+    <string name="text_liked">已赞</string>
+    <string name="text_delete">删除</string>
+    <string name="text_ok">确定</string>
+    <string name="text_cancel">取消</string>
+    <string name="text_send_failure">发送失败</string>
+    <string name="text_send_again">重新发送</string>
+
+    <string name="text_shopping">购物车</string>
+    <string name="text_shopping_edit">编辑</string>
+    <string name="text_shopping_complete">完成</string>
+
+    <!-- text titlebar -->
+    <string name="text_titlebar_mid_home">课比课</string>
+    <string name="text_titlebar_mid_fans">粉丝</string>
+    <string name="text_titlebar_mid_follow">关注</string>
+    <string name="text_titlebar_mid_like">赞</string>
+    <string name="text_titlebar_bind_phone">绑定手机</string>
+    <string name="text_titlebar_edit_userinfo">编辑个人信息</string>
+    <string name="text_titlebar_select_province">选择省市区</string>
+    <string name="text_titlebar_add_info">添加头像和昵称</string>
+    <string name="text_titlebar_order">订单</string>
+    <string name="text_titlebar_next">下一步</string>
+    <string name="text_titlebar_complete">完成</string>
+    <string name="text_titlebar_reset">保存</string>
+    <string name="text_titlebar_share">分享</string>
+    <string name="text_titlebar_release">发布</string>
+    <string name="text_titlebar_edit">编辑</string>
+    <string name="text_titlebar_del">删除</string>
+    <string name="text_titlebar_addtag">添加标签</string>
+    <string name="text_titlebar_addhospital">添加标签</string>
+    <string name="text_titlebar_release_share">写心得</string>
+    <string name="text_titlebar_release_identify">求鉴定</string>
+    <string name="text_titlebar_about">关于</string>
+    <string name="text_titlebar_setting">设置</string>
+    <string name="text_titlebar_suggest">意见反馈</string>
+    <string name="text_titlebar_submit">提交</string>
+    <!-- page -->
+    <string name="text_page_failed">页面加载失败</string>
+    <string name="text_page_empty">页面没有内容</string>
+    <!-- foot -->
+    <string name="text_foot_more_load">更多</string>
+    <string name="text_foot_more_failure">加载失败</string>
+    <string name="text_foot_more_see">查看更多</string>
+
+    <!-- pulldown -->
+    <string name="pull_listview_header_hint_no">没有数据了奥~</string>
+    <string name="pull_listview_footer_hint_no">已经见底了奥~</string>
+    <string name="pull_listview_header_hint_normal">下拉刷新</string>
+    <string name="pull_listview_header_hint_ready">松手刷新</string>
+    <string name="pull_listview_header_hint_loading">刷新中.....</string>
+    <string name="pull_listview_footer_hint_normal">下拉刷新</string>
+    <string name="pull_listview_footer_hint_ready">松手刷新</string>
+    <string name="pull_listview_footer_hint_loading">刷新中...</string>
+
+    <!-- Login -->
+    <string name="login_mobile_hint">请输入手机号</string>
+    <string name="login_verify_hint">请输入验证码</string>
+    <string name="login_verify_get">获取验证码</string>
+    <string name="login_verify_get_again">重新发送</string>
+    <string name="tip_mobile_empty">手机号不能为空</string>
+    <string name="tip_mobile_error">手机号错误</string>
+    <string name="tip_code_error">验证码错误</string>
+    <string name="tip_code_empty">验证码不能为空</string>
+    <string name="login_by_other">第三方账号登陆</string>
+    <!-- bind tel -->
+    <string name="bind_tel_last_step">最后一步</string>
+    <string name="bind_tel_desc">请绑定手机号码完成注册，以便我们以后发送优惠信息！</string>
+    <!-- add user info -->
+    <string name="add_user_chose_portrait">请选择头像</string>
+    <string name="add_user_chose_gender">请选择性别</string>
+    <string name="add_user_chose_nickname">请选择昵称</string>
+    <!-- add tag -->
+    <string name="add_tag_text_part">想分享的部位</string>
+    <string name="add_tag_text_hospital">美容机构</string>
+    <string name="add_tag_text_tip">标记要分享的部位，为你美容的医院和医生</string>
+    <!-- select tag -->
+    <string name="select_tag_share_part">标记要分享的部位</string>
+    <string name="select_tag_share_hospital">选择你的美容机构</string>
+    <string name="select_tag_share_doctor">选择你的美容医生</string>
+    <string name="select_tag_all_item">全部项目</string>
+    <string name="select_tag_all_area">全部地区</string>
+    <string name="select_doctor_fans">粉丝</string>
+    <string name="select_doctor_follow">关注</string>
+    <!-- home -->
+    <string name="home_release_identify">求鉴定</string>
+    <string name="home_release_share">写心得</string>
+    <string name="home_nav_home">首页</string>
+    <string name="home_nav_category">分类</string>
+    <string name="home_nav_shopping">购物车</string>
+    <string name="home_nav_community">寻课</string>
+    <string name="home_nav_brand">品牌馆</string>
+    <string name="home_nav_search">搜索</string>
+    <string name="home_nav_msg">消息</string>
+    <string name="home_nav_me">我的</string>
+    <!-- release -->
+    <string name="release_score">整体评价</string>
+    <string name="release_upload_proof">上传凭证</string>
+    <string name="release_upload_proof_ed">已上传凭证</string>
+    <string name="release_hospital_china">国内医院</string>
+    <string name="release_hospital_foreign">国外医院</string>
+    <string name="text_hot">热门</string>
+    <string name="text_recomment">推荐</string>
+
+    <!-- feed info -->
+    <!-- dialog -->
+    <string name="dialog_tip_delete_feed">确认要删除这条心得吗？</string>
+    <string name="dialog_tip_delete_hospital">确认要删除医院信息吗？</string>
+    <string name="dialog_tip_delete_tag">确认要该删除标签吗？</string>
+    <!-- user info -->
+    <string name="user_info_follow">关注</string>
+    <string name="user_info_fans">粉丝</string>
+    <string name="user_info_like">赞</string>
+
+    <!-- setting -->
+    <string name="setting_suggest">意见反馈</string>
+    <string name="setting_about">关于我们</string>
+    <string name="setting_exit">退出登录</string>
+    <string name="tips_suggest_not_empty">建议不能为空</string>
+
+    <!-- search -->
+    <string name="search_edit_hint">搜索你想要了解的内容</string>
+
+    <!-- data -->
+    <string-array name="region_ids">
+        <item>500</item>
+        <item>501</item>
+        <item>502</item>
+        <item>503</item>
+        <item>506</item>
+        <item>507</item>
+        <item>508</item>
+        <item>509</item>
+        <item>510</item>
+        <item>511</item>
+        <item>512</item>
+        <item>513</item>
+        <item>514</item>
+        <item>515</item>
+        <item>516</item>
+        <item>517</item>
+        <item>3409</item>
+    </string-array>
+    <string-array name="region_name">
+        <item>东城区</item>
+        <item>西城区</item>
+        <item>海淀区</item>
+        <item>朝阳区</item>
+        <item>丰台区</item>
+        <item>石景山区</item>
+        <item>房山区</item>
+        <item>门头沟区</item>
+        <item>通州区</item>
+        <item>顺义区</item>
+        <item>昌平区</item>
+        <item>怀柔区</item>
+        <item>平谷区</item>
+        <item>大兴区</item>
+        <item>密云县</item>
+        <item>延庆县</item>
+        <item>远郊区</item>
+    </string-array>
+    <!-- 1,2,3;1距离 2销量 3评价-->
+    <string-array name="filter">
+        <item>距离</item>
+        <item>销量</item>
+        <item>评价</item>
+    </string-array>
+    <!-- 1,2 -->
+    <string-array name="price_filter">
+        <item>由低到高</item>
+        <item>由高到低</item>
+    </string-array>
+    <!-- 1,2,3 -->
+    <string-array name="use_filter">
+        <item>10成新</item>
+        <item>9成新</item>
+        <item>8成新</item>
+        <item>不到8成新</item>
+    </string-array>
+    <!-- 1,2,3 -->
+    <string-array name="age_filter">
+        <item>0-6岁</item>
+        <item>7-18岁</item>
+        <item>18岁以上</item>
+    </string-array>
+    <!-- 1,2,3，4 -->
+    <string-array name="age_filter2">
+        <item>全部</item>
+        <item>0-6</item>
+        <item>6-12</item>
+        <item>12-18</item>
+        <item>18以上</item>
+    </string-array>
+    <!-- 1,2 -->
+    <string-array name="scope_filter">
+        <item>商家</item>
+        <item>个人</item>
+    </string-array>
+    <!-- WXPayEntryActivity -->
+    <string name="pay_result_tip">这个界面用于显示第三方app通过微信支付的结果</string>
+    <string name="pay_result_callback_msg" formatted="false">微信支付结果：%s</string>
+
+    <!-- Bottommenu -->
+    <string-array name="set_photo_array">
+        <item name="camera">立即拍照</item>
+        <item name="album">从相册中选择</item>
+        <item name="cancel">取消</item>
+    </string-array>
+
+    <!-- Bottommenu -->
+    <string-array name="set_sex_array">
+        <item name="male">男</item>
+        <item name="female">女</item>
+        <item name="cancel">取消</item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

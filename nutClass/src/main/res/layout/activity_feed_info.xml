@@ -1,0 +1,103 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:attr="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll_root"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/bg_main_activity_grey"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/ll_title"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/height_titlebar"
+        android:background="@color/bg_titlebar"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/common_15"
+            android:src="@drawable/titlebar_back" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:id="@+id/iv_weibo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/common_5"
+            android:src="@drawable/selector_feed_share_webo" />
+
+        <ImageView
+            android:id="@+id/iv_friend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/common_5"
+            android:src="@drawable/selector_feed_share_friend" />
+
+        <ImageView
+            android:id="@+id/iv_zone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/common_5"
+            android:src="@drawable/selector_feed_share_zone" />
+
+        <ImageView
+            android:id="@+id/iv_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/common_15"
+            android:src="@drawable/selector_feed_share_more" />
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/card_list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/bg_main_activity_grey" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_card_border_divider"
+        android:background="@color/card_border_color_10" />
+
+    <LinearLayout
+        android:id="@+id/ll_input"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_0"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/common_5"
+        android:paddingLeft="@dimen/common_15"
+        android:paddingRight="@dimen/common_15"
+        android:paddingTop="@dimen/common_5" >
+
+        <EditText
+            android:id="@+id/edit_input"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/height_btn"
+            android:layout_weight="1"
+            android:background="@drawable/selector_edit_common_grey"
+            android:textColor="@color/color_30"
+            android:textSize="@dimen/font_14" />
+
+        <TextView
+            android:id="@+id/btn_input"
+            android:layout_width="@dimen/width_like_btn"
+            android:layout_height="@dimen/height_btn"
+            android:layout_marginLeft="@dimen/common_5"
+            android:background="@drawable/selector_btn_common_pink"
+            android:gravity="center"
+            android:text="@string/text_send"
+            android:textColor="@color/color_0"
+            android:textSize="@dimen/font_14" />
+    </LinearLayout>
+
+</LinearLayout>

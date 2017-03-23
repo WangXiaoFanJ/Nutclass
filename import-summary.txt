@@ -1,0 +1,198 @@
+ECLIPSE ANDROID PROJECT IMPORT SUMMARY
+======================================
+
+Ignored Files:
+--------------
+The following files were *not* copied into the new Gradle project; you
+should evaluate whether these are still needed in your project and if
+so manually move them:
+
+From NutClass:
+* .DS_Store
+* ic_launcher-web.png
+* nutclass.keystore
+* proguard-project.txt
+From jd_apklib:
+* README.md
+From recyclerview:
+* README.txt
+From social_sdk_library_project:
+* build.gradle
+* proguard-project.txt
+
+Replaced Jars with Dependencies:
+--------------------------------
+The importer recognized the following .jar files as third party
+libraries and replaced them with Gradle dependencies instead. This has
+the advantage that more explicit version information is known, and the
+libraries can be updated automatically. However, it is possible that
+the .jar file in your project was of an older version than the
+dependency we picked, which could render the project not compileable.
+You can disable the jar replacement in the import wizard and try again:
+
+android-support-v4.jar => com.android.support:support-v4:18.+
+android-support-v7-appcompat.jar => com.android.support:appcompat-v7:19.+
+gson-2.2.1.jar => com.google.code.gson:gson:2.2.1
+
+Potentially Missing Dependency:
+-------------------------------
+When we replaced the following .jar files with a Gradle dependency, we
+inferred the dependency version number from the filename. This
+specific version may not actually be available from the repository.
+If you get a build error stating that the dependency is missing, edit
+the version number to for example "+" to pick up the latest version
+instead. (This may require you to update your code if the library APIs
+have changed.)
+
+gson-2.2.1.jar => version 2.2.1 in com.google.code.gson:gson:2.2.1
+
+Replaced Libraries with Dependencies:
+-------------------------------------
+The importer recognized the following library projects as third party
+libraries and replaced them with Gradle dependencies instead. This has
+the advantage that more explicit version information is known, and the
+libraries can be updated automatically. However, it is possible that
+the source files in your project were of an older version than the
+dependency we picked, which could render the project not compileable.
+You can disable the library replacement in the import wizard and try
+again:
+
+android-support-v7-appcompat => [com.android.support:appcompat-v7:23.+]
+
+Moved Files:
+------------
+Android Gradle projects use a different directory structure than ADT
+Eclipse projects. Here's how the projects were restructured:
+
+In jd_apklib:
+* AndroidManifest.xml => jd_apklib\src\main\AndroidManifest.xml
+* assets\ => jd_apklib\src\main\assets
+* libs\jd_crash_lib_release130.jar => jd_apklib\libs\jd_crash_lib_release130.jar
+* libs\JDSDK_h_130.jar => jd_apklib\libs\JDSDK_h_130.jar
+* libs\tbs_sdk_v1.5.1.1052_25436_obfs_20160317_144408.jar => jd_apklib\libs\tbs_sdk_v1.5.1.1052_25436_obfs_20160317_144408.jar
+* res\ => jd_apklib\src\main\res\
+* src\ => jd_apklib\src\main\java
+In recyclerview:
+* AndroidManifest.xml => recyclerview\src\main\AndroidManifest.xml
+* assets\ => recyclerview\src\main\assets
+* res\ => recyclerview\src\main\res\
+* src\ => recyclerview\src\main\java
+In RefreshLayout:
+* AndroidManifest.xml => refreshLayout\src\main\AndroidManifest.xml
+* assets\ => refreshLayout\src\main\assets
+* lint.xml => refreshLayout\lint.xml
+* res\ => refreshLayout\src\main\res\
+* src\ => refreshLayout\src\main\java\
+In social_sdk_library_project:
+* AndroidManifest.xml => social_sdk_library_project\src\main\AndroidManifest.xml
+* assets\ => social_sdk_library_project\src\main\assets
+* libs\arm64-v8a\libweibosdkcore.so => social_sdk_library_project\src\main\jniLibs\arm64-v8a\libweibosdkcore.so
+* libs\armeabi-v7a\libweibosdkcore.so => social_sdk_library_project\src\main\jniLibs\armeabi-v7a\libweibosdkcore.so
+* libs\armeabi\libweibosdkcore.so => social_sdk_library_project\src\main\jniLibs\armeabi\libweibosdkcore.so
+* libs\bolts-android-1.1.4.jar => social_sdk_library_project\libs\bolts-android-1.1.4.jar
+* libs\httpmime-4.1.3.jar => social_sdk_library_project\libs\httpmime-4.1.3.jar
+* libs\libapshare.jar => social_sdk_library_project\libs\libapshare.jar
+* libs\mips64\libweibosdkcore.so => social_sdk_library_project\src\main\jniLibs\mips64\libweibosdkcore.so
+* libs\mips\libweibosdkcore.so => social_sdk_library_project\src\main\jniLibs\mips\libweibosdkcore.so
+* libs\mta-sdk-1.6.2.jar => social_sdk_library_project\libs\mta-sdk-1.6.2.jar
+* libs\open_sdk_r5509.jar => social_sdk_library_project\libs\open_sdk_r5509.jar
+* libs\SocialSDK_alipay.jar => social_sdk_library_project\libs\SocialSDK_alipay.jar
+* libs\SocialSDK_douban.jar => social_sdk_library_project\libs\SocialSDK_douban.jar
+* libs\SocialSDK_email.jar => social_sdk_library_project\libs\SocialSDK_email.jar
+* libs\SocialSDK_evernote.jar => social_sdk_library_project\libs\SocialSDK_evernote.jar
+* libs\SocialSDK_facebook_1.jar => social_sdk_library_project\libs\SocialSDK_facebook_1.jar
+* libs\SocialSDK_facebook_2.jar => social_sdk_library_project\libs\SocialSDK_facebook_2.jar
+* libs\SocialSDK_flickr.jar => social_sdk_library_project\libs\SocialSDK_flickr.jar
+* libs\SocialSDK_foursquare.jar => social_sdk_library_project\libs\SocialSDK_foursquare.jar
+* libs\SocialSDK_instagram.jar => social_sdk_library_project\libs\SocialSDK_instagram.jar
+* libs\SocialSDK_kakao.jar => social_sdk_library_project\libs\SocialSDK_kakao.jar
+* libs\SocialSDK_laiwang_1.jar => social_sdk_library_project\libs\SocialSDK_laiwang_1.jar
+* libs\SocialSDK_laiwang_2.jar => social_sdk_library_project\libs\SocialSDK_laiwang_2.jar
+* libs\SocialSDK_line.jar => social_sdk_library_project\libs\SocialSDK_line.jar
+* libs\SocialSDK_linkedin_1.jar => social_sdk_library_project\libs\SocialSDK_linkedin_1.jar
+* libs\SocialSDK_linkedin_2.jar => social_sdk_library_project\libs\SocialSDK_linkedin_2.jar
+* libs\SocialSDK_pinterest.jar => social_sdk_library_project\libs\SocialSDK_pinterest.jar
+* libs\SocialSDK_pocket.jar => social_sdk_library_project\libs\SocialSDK_pocket.jar
+* libs\SocialSDK_QQZone_3.jar => social_sdk_library_project\libs\SocialSDK_QQZone_3.jar
+* libs\SocialSDK_renren_1.jar => social_sdk_library_project\libs\SocialSDK_renren_1.jar
+* libs\SocialSDK_renren_2.jar => social_sdk_library_project\libs\SocialSDK_renren_2.jar
+* libs\SocialSDK_Sina.jar => social_sdk_library_project\libs\SocialSDK_Sina.jar
+* libs\SocialSDK_sms.jar => social_sdk_library_project\libs\SocialSDK_sms.jar
+* libs\SocialSDK_tencentWB_1.jar => social_sdk_library_project\libs\SocialSDK_tencentWB_1.jar
+* libs\SocialSDK_tencentWB_2.jar => social_sdk_library_project\libs\SocialSDK_tencentWB_2.jar
+* libs\SocialSDK_tencentWB_3.jar => social_sdk_library_project\libs\SocialSDK_tencentWB_3.jar
+* libs\SocialSDK_tumblr.jar => social_sdk_library_project\libs\SocialSDK_tumblr.jar
+* libs\SocialSDK_twitter.jar => social_sdk_library_project\libs\SocialSDK_twitter.jar
+* libs\SocialSDK_WeiXin_1.jar => social_sdk_library_project\libs\SocialSDK_WeiXin_1.jar
+* libs\SocialSDK_WeiXin_2.jar => social_sdk_library_project\libs\SocialSDK_WeiXin_2.jar
+* libs\SocialSDK_whatsapp.jar => social_sdk_library_project\libs\SocialSDK_whatsapp.jar
+* libs\SocialSDK_yixin_1.jar => social_sdk_library_project\libs\SocialSDK_yixin_1.jar
+* libs\SocialSDK_yixin_2.jar => social_sdk_library_project\libs\SocialSDK_yixin_2.jar
+* libs\SocialSDK_ynote.jar => social_sdk_library_project\libs\SocialSDK_ynote.jar
+* libs\twitter4j-core-4.0.4.jar => social_sdk_library_project\libs\twitter4j-core-4.0.4.jar
+* libs\umeng_social_sdk.jar => social_sdk_library_project\libs\umeng_social_sdk.jar
+* libs\volley.jar => social_sdk_library_project\libs\volley.jar
+* libs\weiboSDKCore_3.1.4.jar => social_sdk_library_project\libs\weiboSDKCore_3.1.4.jar
+* libs\x86\libweibosdkcore.so => social_sdk_library_project\src\main\jniLibs\x86\libweibosdkcore.so
+* libs\x86_64\libweibosdkcore.so => social_sdk_library_project\src\main\jniLibs\x86_64\libweibosdkcore.so
+* res\ => social_sdk_library_project\src\main\res\
+* src\ => social_sdk_library_project\src\main\java
+In NutClass:
+* AndroidManifest.xml => nutClass\src\main\AndroidManifest.xml
+* assets\ => nutClass\src\main\assets\
+* libs\afinal_0.5.1_bin.jar => nutClass\libs\afinal_0.5.1_bin.jar
+* libs\alipaySdk-20160120.jar => nutClass\libs\alipaySdk-20160120.jar
+* libs\AMap3DMap_3.3.1_AMapNavi_1.8.0_20160420.jar => nutClass\libs\AMap3DMap_3.3.1_AMapNavi_1.8.0_20160420.jar
+* libs\AMap_Location_v2.3.0_20160112.jar => nutClass\libs\AMap_Location_v2.3.0_20160112.jar
+* libs\armeabi-v7a\libgdinamapv4sdk752.so => nutClass\src\main\jniLibs\armeabi-v7a\libgdinamapv4sdk752.so
+* libs\armeabi-v7a\libgdinamapv4sdk752ex.so => nutClass\src\main\jniLibs\armeabi-v7a\libgdinamapv4sdk752ex.so
+* libs\armeabi-v7a\libmsc.so => nutClass\src\main\jniLibs\armeabi-v7a\libmsc.so
+* libs\armeabi-v7a\libtbt3631.so => nutClass\src\main\jniLibs\armeabi-v7a\libtbt3631.so
+* libs\armeabi-v7a\libwtbt144.so => nutClass\src\main\jniLibs\armeabi-v7a\libwtbt144.so
+* libs\armeabi\libgdinamapv4sdk752.so => nutClass\src\main\jniLibs\armeabi\libgdinamapv4sdk752.so
+* libs\armeabi\libgdinamapv4sdk752ex.so => nutClass\src\main\jniLibs\armeabi\libgdinamapv4sdk752ex.so
+* libs\armeabi\libmsc.so => nutClass\src\main\jniLibs\armeabi\libmsc.so
+* libs\armeabi\libtbt3631.so => nutClass\src\main\jniLibs\armeabi\libtbt3631.so
+* libs\armeabi\libwtbt144.so => nutClass\src\main\jniLibs\armeabi\libwtbt144.so
+* libs\eventbus.jar => nutClass\libs\eventbus.jar
+* libs\httpmime-4.1.3.jar => nutClass\libs\httpmime-4.1.3.jar
+* libs\locSDK_6.13.jar => nutClass\libs\locSDK_6.13.jar
+* libs\Msc.jar => nutClass\libs\Msc.jar
+* libs\okhttp-2.4.0.jar => nutClass\libs\okhttp-2.4.0.jar
+* libs\okio-1.4.0.jar => nutClass\libs\okio-1.4.0.jar
+* libs\photoview_library-1.2.2.jar => nutClass\libs\photoview_library-1.2.2.jar
+* libs\umeng-update-v2.6.0.1.jar => nutClass\libs\umeng-update-v2.6.0.1.jar
+* libs\umeng_sdk.jar => nutClass\libs\umeng_sdk.jar
+* libs\universal-image-loader-1.9.4.jar => nutClass\libs\universal-image-loader-1.9.4.jar
+* lint.xml => nutClass\lint.xml
+* res\ => nutClass\src\main\res\
+* src\ => nutClass\src\main\java\
+
+Missing Android Support Repository:
+-----------------------------------
+Some useful libraries, such as the Android Support Library, are
+installed from a special Maven repository, which should be installed
+via the SDK manager.
+
+It looks like this library is missing from your SDK installation at:
+null
+
+To install it, open the SDK manager, and in the Extras category,
+select "Android Support Repository". You may also want to install the
+"Google Repository" if you want to use libraries like Google Play
+Services.
+
+Next Steps:
+-----------
+You can now build the project. The Gradle project needs network
+connectivity to download dependencies.
+
+Bugs:
+-----
+If for some reason your project does not build, and you determine that
+it is due to a bug or limitation of the Eclipse to Gradle importer,
+please file a bug at http://b.android.com with category
+Component-Tools.
+
+(This import summary is for your information only, and can be deleted
+after import once you are satisfied with the results.)

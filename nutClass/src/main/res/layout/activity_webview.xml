@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:attr="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/content_layout"
+    android:background="@color/bg_main_activity_grey"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+    
+    <com.dev.nutclass.view.TitleBar
+        android:id="@+id/tb_title"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/height_titlebar"
+        attr:left_type="1"
+        attr:middle_text=""
+        />
+   <com.dev.nutclass.view.ProgressWebView
+	    android:id="@+id/webview"
+	    android:layout_below="@+id/tb_title"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"/>
+	  <!-- 重载界面 -->
+  
+</RelativeLayout>

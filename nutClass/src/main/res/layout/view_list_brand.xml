@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/iv_brand_ad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/bg_home_head"
+        android:visibility="gone"
+        android:scaleType="fitXY"
+        />
+    <com.dev.nutclass.view.NewestActionGridView
+        android:layout_below="@id/iv_brand_ad"
+        android:id="@+id/grid_view_brand"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:horizontalSpacing="6dp"
+        android:numColumns="3"></com.dev.nutclass.view.NewestActionGridView
+>
+
+</RelativeLayout>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0000ff"
+    android:orientation="vertical" >
+
+    <com.dev.nutclass.view.TitleBar
+        xmlns:attr="http://schemas.android.com/apk/res/com.dev.nutclass"
+        android:id="@+id/tb_title"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/height_titlebar"
+        attr:left_type="1"
+        attr:middle_text=""
+        attr:right_type1="4"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bg_main_activity_white" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <com.dev.nutclass.view.DrawerView
+                android:id="@+id/view_drawer"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+            </com.dev.nutclass.view.DrawerView>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/view_album"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/common_10"
+                android:layout_marginRight="@dimen/common_10"
+                 />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+             >
+
+            <com.dev.nutclass.view.AlbumDirView
+                android:id="@+id/view_album_dir"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" 
+                >
+            </com.dev.nutclass.view.AlbumDirView>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

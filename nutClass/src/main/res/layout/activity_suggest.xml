@@ -1,0 +1,31 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:attr="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/content_layout"
+
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/bg_main_activity_white"
+    android:orientation="vertical" >
+   <com.dev.nutclass.view.TitleBar
+        xmlns:attr="http://schemas.android.com/apk/res/com.dev.nutclass"
+        android:id="@+id/tb_title"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/height_titlebar"
+        attr:left_type="1"
+        attr:middle_text="@string/text_titlebar_about"
+        attr:right_type1="9"
+        />
+    <EditText
+        android:id="@+id/edit_suggest"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="@dimen/common_20"
+        android:paddingLeft="@dimen/common_15"
+        android:paddingRight="@dimen/common_15"
+        android:gravity="left|top"
+        android:text="感谢您宝贵的意见以及建议"
+        android:background="@color/bg_main_activity_white"
+        android:textColor="@color/color_90"
+        android:textSize="@dimen/font_14" />
+
+</LinearLayout>

@@ -1,0 +1,112 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:attr="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll_root"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/bg_main_activity_grey"
+    android:orientation="vertical" >
+
+    <com.dev.nutclass.view.TitleBar
+        android:id="@+id/tb_title"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/height_titlebar"
+        attr:left_type="1"
+        attr:middle_text="登陆" />
+
+    <LinearLayout
+        android:id="@+id/ll_weixin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/common_10"
+        android:layout_marginLeft="@dimen/common_10"
+        android:layout_marginRight="@dimen/common_10"
+        android:layout_marginTop="@dimen/common_10"
+        android:background="@drawable/radius_white_bg"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/common_5"
+        android:paddingRight="@dimen/common_5" >
+
+        <EditText
+            android:id="@+id/edit_phone"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:gravity="center_vertical|left"
+            android:hint="输入手机号码"
+            style="@style/SingleLineEditText"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_size"
+            android:background="@color/list_divider_line" />
+
+        <EditText
+            android:id="@+id/edit_pwd"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:gravity="center_vertical|left"
+            android:hint="输入密码"
+            android:password="true"
+            style="@style/SingleLineEditText" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_login"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_40"
+        android:layout_marginBottom="@dimen/common_10"
+        android:layout_marginLeft="@dimen/common_10"
+        android:layout_marginRight="@dimen/common_10"
+        android:background="@drawable/radius_white_bg"
+        android:gravity="center"
+        android:text="登陆"
+        android:textColor="@color/color_black"
+        android:textSize="@dimen/font_16" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/common_10"
+        android:layout_marginLeft="@dimen/common_10"
+        android:layout_marginRight="@dimen/common_10"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/common_5"
+        android:paddingRight="@dimen/common_5" >
+
+        <TextView
+            android:id="@+id/tv_left"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/height_40"
+            android:layout_weight="1"
+            android:gravity="center_vertical|left"
+            android:text="其他账号登陆"
+            android:textColor="@color/color_60"
+            android:textSize="@dimen/font_14" />
+
+        <TextView
+            android:id="@+id/tv_right"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/height_40"
+            android:gravity="center_vertical"
+            android:text="忘记密码"
+            android:textColor="@color/color_60"
+            android:textSize="@dimen/font_14" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_register"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_60"
+        android:layout_marginTop="@dimen/common_20"
+        android:layout_marginBottom="@dimen/common_10"
+        android:layout_marginLeft="@dimen/common_50"
+        android:layout_marginRight="@dimen/common_50"
+        android:background="@drawable/radius_20_white_bg"
+        android:gravity="center"
+        android:text="免费注册"
+        android:textColor="@color/color_black"
+        android:textSize="@dimen/font_18" />
+
+</LinearLayout>

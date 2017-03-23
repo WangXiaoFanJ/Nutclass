@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- titlebar -->
+    <!--
+	<drawable name="title_bg">#e93154</drawable>	
+	  -->
+	<drawable name="bottom_bg_normal">#686883</drawable>	
+	
+	<drawable name="bottom_bg_pressed">#565672</drawable>	
+	
+	
+	
+	<!-- 40%透明度 -->
+    <drawable name="bottom_menu_bg">#7f000000</drawable>
+</resources>

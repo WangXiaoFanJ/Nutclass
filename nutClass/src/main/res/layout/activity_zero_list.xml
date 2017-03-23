@@ -1,0 +1,64 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:attr="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll_root"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/bg_main_activity_grey"
+    android:orientation="vertical" >
+
+    <com.dev.nutclass.view.TitleBar
+        android:id="@+id/tb_title"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/height_titlebar"
+        attr:left_type="1"
+        attr:middle_text="购买课程"
+        attr:right_type1="13" />
+
+    <include layout="@layout/view_filter" />
+
+    <ImageView
+        android:id="@+id/iv_head"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/height_banner"
+        android:layout_centerInParent="true"
+        android:scaleType="fitXY"
+        android:visibility="gone" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+       <android.support.v7.widget.RecyclerView
+                android:id="@+id/card_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/bg_main_activity_grey"
+                android:paddingTop="@dimen/common_5" />
+
+        <LinearLayout
+            android:id="@+id/ll_filter_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:visibility="gone" >
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/filter_list"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/bg_main_activity_grey"
+                android:paddingTop="@dimen/common_5" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/filter_list2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/bg_main_activity_grey"
+                android:paddingTop="@dimen/common_5" />
+        </LinearLayout>
+    </FrameLayout>
+
+</LinearLayout>

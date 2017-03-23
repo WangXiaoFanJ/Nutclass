@@ -1,0 +1,108 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:attr="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll_root"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/bg_main_activity_grey"
+    android:orientation="vertical" >
+
+    <com.dev.nutclass.view.TitleBar
+        android:id="@+id/tb_title"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/height_titlebar"
+        attr:left_type="1"
+        attr:middle_text="修改密码"
+        attr:right_type1="10"
+         />
+
+    <LinearLayout
+        android:id="@+id/ll_weixin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/common_10"
+        android:layout_marginLeft="@dimen/common_10"
+        android:layout_marginRight="@dimen/common_10"
+        android:layout_marginTop="@dimen/common_10"
+        android:background="@drawable/radius_white_bg"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/common_5"
+        android:paddingRight="@dimen/common_5" >
+
+        <EditText
+            android:id="@+id/edit_old_pwd"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_40"
+            android:layout_weight="1"
+            android:background="@null"
+            android:gravity="center_vertical|left"
+            android:hint="旧密码"
+            android:textColor="@color/color_60"
+            android:textColorHint="@color/color_20"
+            android:textSize="@dimen/font_14"
+            android:visibility="gone"/>
+         <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_size"
+            android:background="@color/list_divider_line" />
+        <EditText
+            android:id="@+id/edit_pwd"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_40"
+            android:layout_weight="1"
+            android:background="@null"
+            android:gravity="center_vertical|left"
+            android:hint="新密码"
+            android:textColor="@color/color_60"
+            android:textColorHint="@color/color_20"
+            android:textSize="@dimen/font_14" />
+         <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_size"
+            android:background="@color/list_divider_line" />
+        <EditText
+            android:id="@+id/edit_pwd_again"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_40"
+            android:layout_weight="1"
+            android:background="@null"
+            android:gravity="center_vertical|left"
+            android:hint="再次输入密码"
+            android:textColor="@color/color_60"
+            android:textColorHint="@color/color_20"
+            android:textSize="@dimen/font_14"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/common_10"
+        android:layout_marginLeft="@dimen/common_10"
+        android:layout_marginRight="@dimen/common_10"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/common_5"
+        android:paddingRight="@dimen/common_5" >
+
+        <TextView
+            android:id="@+id/tv_left"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/height_40"
+            android:layout_weight="1"
+            android:gravity="center_vertical|left"
+            android:text="服务认证资质审核"
+            android:textColor="@color/color_60"
+            android:textSize="@dimen/font_12" />
+
+        <TextView
+            android:id="@+id/tv_right"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/height_40"
+            android:gravity="center_vertical"
+            android:text="服务条款和隐私政策"
+            android:textColor="@color/color_60"
+            android:textSize="@dimen/font_12" />
+    </LinearLayout>
+
+</LinearLayout>

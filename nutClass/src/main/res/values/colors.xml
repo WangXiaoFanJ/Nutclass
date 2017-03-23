@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- nutclass -->
+    <color name="bg_main_activity_grey">#f2f2f2</color>
+    <color name="list_divider_line">#f2f2f2</color>
+    <color name="bg_req_discount_activity_grey">#f3f3f3</color>
+    <color name="color_0">#ffffff</color>
+    <!-- 浅浅浅灰-->
+    <color name="color_10">#e5e5e5</color>
+    <!-- 浅浅灰-->
+    <color name="color_20">#cccccc</color>
+    <!-- 浅灰 -->
+    <color name="color_40">#999999</color>
+    <color name="color_41">#969696</color>
+    <!-- 深灰 -->
+    <color name="color_60">#666666</color>
+
+    <color name="color_text_selected">#e94706</color>
+    <color name="color_text_normal">#969696</color>
+
+    <color name="color_100">#000000</color>
+    <color name="color_merchant_btn">#e94706</color>
+    <color name="color_white">#ffffff</color>
+    <color name="color_white_10">#6cffffff</color>
+    <color name="color_white_40">#6cffffff</color>
+    <color name="color_black_40">#6c000000</color>
+    <color name="color_red">#ff0000</color>
+    <color name="color_red_20">#c20806</color>
+    <color name="color_green">#00ff00</color>
+    <color name="color_black">#000000</color>
+    <color name="color_dark_red">#e94706</color>
+    <color name="color_yellow">#f2cc8b</color>
+    <color name="color_blue">#0000ff</color>
+    <color name="color_orange">#eb5405</color>
+    <color name="color_orange_home">#E94709</color>
+    <color name="color_blue_light">#2a7fe9</color>
+    <color name="color_gray_10">#c4c4c4</color>
+    <color name="login_orange">#e7643a</color>
+    <!-- text -->
+    <color name="text_card_merchant_gray">#898989</color>
+    <!-- bg -->
+    <color name="bg_titlebar">#ff8282</color>
+    <color name="bg_crop_img">#ffffff</color>
+    <color name="bg_main_activity_white">#ffffff</color>
+    <color name="bg_main_activity_pink">#ff8282</color>
+    <color name="bg_dialog_merchant">#e4e4e4</color>
+    <!--  -->
+
+
+    <!-- default value -->
+    <!-- ViewPager 圆形indicator使用的颜色 -->
+    <color name="circle_page_indicator_fill_color">#FFFFFFFF</color>
+    <color name="circle_page_indicator_page_color">#00000000</color>
+    <color name="circle_page_indicator_stroke_color">#FFDADADA</color>
+
+    <!-- common color -->
+
+    <color name="color_30">#b2b2b2</color>
+    <color name="color_50">#7f7f7f</color>
+    <color name="color_70">#4c4c4c</color>
+    <color name="color_80">#333333</color>
+    <color name="color_90">#191919</color>
+    <color name="font_color_pink_52">#ef5252</color>
+    <color name="font_color_pink_79">#ff7a79</color>
+    <color name="font_color_pink">#ff8282</color>
+    <color name="font_color_red">#e25453</color>
+    <color name="font_color_light_pink">#ffa5a4</color>
+    <color name="font_color_dark_pink">#ff8282</color>
+    <color name="card_border_color_10">#e5e5e5</color>
+    <color name="home_nav_txt">#666666</color>
+    <color name="home_nav_txt_ed">#e94706</color>
+    <color name="color_red_action">#ff3366</color>
+     <color name="card_second_font">#828282</color>
+    <color name="card_manage_highlight_font">#ec594e</color>
+    <color name="card_manage_font">#ffffff</color>
+    
+    <color name="province_line_border">#C7C7C7</color>
+
+</resources>

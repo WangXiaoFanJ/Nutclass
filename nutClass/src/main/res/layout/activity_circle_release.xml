@@ -1,0 +1,83 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:attr="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll_root"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/bg_main_activity_grey"
+    android:orientation="vertical" >
+
+    <com.dev.nutclass.view.TitleBar
+        android:id="@+id/tb_title"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/height_titlebar"
+        attr:left_type="1" />
+
+    <ScrollView
+        android:layout_below="@id/tb_title"
+        android:id="@+id/scrollView1"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/common_15"
+                android:background="@color/bg_main_activity_white"
+                android:orientation="vertical" >
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/height_card_border_divider"
+                    android:background="@color/card_border_color_10" />
+
+                <EditText
+                    android:id="@+id/edit_desc"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_release_edit"
+                    android:layout_marginBottom="@dimen/common_15"
+                    android:layout_marginLeft="@dimen/common_10"
+                    android:layout_marginRight="@dimen/common_10"
+                    android:layout_marginTop="@dimen/common_15"
+                    android:background="@color/color_0"
+                    android:gravity="left|top"
+                    android:textColor="@color/color_60"
+                    android:hint="这一刻的想法..."
+                    android:textSize="@dimen/font_14" >
+                </EditText>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/height_card_border_divider"
+                    android:background="@color/card_border_color_10" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/bg_main_activity_white"
+                android:orientation="vertical" >
+
+                <com.dev.nutclass.view.AblumsRectView
+                    android:id="@+id/album_view"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/common_10" >
+                </com.dev.nutclass.view.AblumsRectView>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+     <include
+         android:layout_below="@id/tb_title"
+        android:id="@+id/view_loading"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center"
+        layout="@layout/view_page_loading"
+        android:visibility="gone" />
+</RelativeLayout>

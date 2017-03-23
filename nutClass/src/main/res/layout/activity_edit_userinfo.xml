@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_main_activity_grey"
+    android:orientation="vertical" >
+
+    <com.dev.nutclass.view.TitleBar
+        xmlns:attr="http://schemas.android.com/apk/res/com.dev.nutclass"
+        android:id="@+id/tb_title"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/height_titlebar"
+        attr:left_type="1"
+        attr:middle_text="@string/text_titlebar_edit_userinfo"
+        attr:right_type1="3" />
+
+    <View
+        android:id="@+id/view_divider"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/line_size"
+        android:background="@color/list_divider_line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/common_15"
+        android:background="@color/bg_main_activity_white"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/common_15"
+        android:paddingRight="@dimen/common_15" >
+
+        <LinearLayout
+            android:id="@+id/ll_modify_profile"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_40"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/common_5"
+                android:layout_weight="1"
+                android:singleLine="true"
+                android:text="头像"
+                android:textColor="@color/color_60"
+                android:textSize="@dimen/font_14" />
+
+            <ImageView
+                android:id="@+id/iv_profile"
+                android:layout_width="@dimen/size_portrait_feed_30"
+                android:layout_height="@dimen/size_portrait_feed_30"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_launcher" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/common_2"
+                android:src="@drawable/icon_arrow_right" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/line_size"
+            android:background="@color/list_divider_line" />
+
+        <LinearLayout
+            android:id="@+id/ll_modify_name"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_40"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/common_5"
+                android:layout_weight="1"
+                android:singleLine="true"
+                android:text="昵称"
+                android:textColor="@color/color_60"
+                android:textSize="@dimen/font_14" />
+
+            <TextView
+                android:id="@+id/tv_user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/common_5"
+                android:singleLine="true"
+                android:text="世界无限大"
+                android:textColor="@color/color_60"
+                android:textSize="@dimen/font_14" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/common_2"
+                android:src="@drawable/icon_arrow_right" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/line_size"
+            android:background="@color/list_divider_line" />
+
+        <LinearLayout
+            android:id="@+id/ll_modify_sex"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_40"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/common_5"
+                android:layout_weight="1"
+                android:singleLine="true"
+                android:text="性别"
+                android:textColor="@color/color_60"
+                android:textSize="@dimen/font_14" />
+
+            <TextView
+                android:id="@+id/tv_sex"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/common_5"
+                android:singleLine="true"
+                android:text="男"
+                android:textColor="@color/color_60"
+                android:textSize="@dimen/font_14" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/common_2"
+                android:src="@drawable/icon_arrow_right" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/line_size"
+            android:background="@color/list_divider_line" />
+
+        <LinearLayout
+            android:id="@+id/ll_modify_birthday"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_40"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/common_5"
+                android:layout_weight="1"
+                android:singleLine="true"
+                android:text="出生日期"
+                android:textColor="@color/color_60"
+                android:textSize="@dimen/font_14" />
+
+            <TextView
+                android:id="@+id/tv_birthday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/common_5"
+                android:singleLine="true"
+                android:text="出生日期"
+                android:textColor="@color/color_60"
+                android:textSize="@dimen/font_14" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/common_2"
+                android:src="@drawable/icon_arrow_right" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/line_size"
+            android:background="@color/list_divider_line" />
+
+        <LinearLayout
+            android:id="@+id/ll_modify_address"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_40"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/common_5"
+                android:layout_weight="1"
+                android:singleLine="true"
+                android:text="常住地"
+                android:textColor="@color/color_60"
+                android:textSize="@dimen/font_14" />
+
+            <TextView
+                android:id="@+id/tv_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/common_5"
+                android:singleLine="true"
+                android:text="常住地"
+                android:textColor="@color/color_60"
+                android:textSize="@dimen/font_14" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/common_2"
+                android:src="@drawable/icon_arrow_right" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/common_15"
+        android:background="@color/bg_main_activity_white"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/common_15"
+        android:paddingRight="@dimen/common_15" >
+
+        <LinearLayout
+            android:id="@+id/ll_modify_baby"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_40"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/common_5"
+                android:layout_weight="1"
+                android:singleLine="true"
+                android:text="我的宝宝状态"
+                android:textColor="@color/color_60"
+                android:textSize="@dimen/font_14" />
+
+            <TextView
+                android:id="@+id/tv_baby"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/common_5"
+                android:singleLine="true"
+                android:text="无宝宝"
+                android:textColor="@color/color_60"
+                android:textSize="@dimen/font_14" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/common_2"
+                android:src="@drawable/icon_arrow_right" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,37 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/content_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+    
+	<FrameLayout
+         android:id="@+id/container"
+         android:layout_width="fill_parent"
+         android:layout_height="fill_parent"
+         android:orientation="vertical" />
+	 <!-- 重载界面 有内容展示目前本地缓存内容，否则展示加载失败重新加载页面内容 -->
+	 <include
+	      android:id="@+id/view_failed"
+	      android:layout_width="fill_parent"
+	      android:layout_height="fill_parent"
+	      android:layout_gravity="center"
+	      layout="@layout/view_page_failure"
+	      android:visibility="gone" />
+	 <!-- 没有内容则展示空页面 -->
+	 <include
+	      android:id="@+id/view_empty"
+	      android:layout_width="fill_parent"
+	      android:layout_height="fill_parent"
+	      android:layout_gravity="center"
+	      layout="@layout/view_page_empty"
+	      android:visibility="gone" />
+	
+	  <!-- 加载进度条 -->
+	  <include
+	      android:id="@+id/view_loading"
+	      android:layout_width="fill_parent"
+	      android:layout_height="fill_parent"
+	      android:layout_gravity="center"
+	      layout="@layout/view_page_loading"
+	      android:visibility="gone" />
+    
+</RelativeLayout>

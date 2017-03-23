@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/common_15"
+    android:paddingRight="@dimen/common_15"
+     >
+
+    <RelativeLayout
+        android:id="@+id/rl_self"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         android:visibility="gone"
+        android:layout_marginBottom="@dimen/common_10" >
+
+        <EditText
+            android:id="@+id/edit_self"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_btn"
+            android:background="@drawable/selector_edit_common_grey"
+            android:textColor="@color/color_100"
+            android:textSize="@dimen/font_14" >
+        </EditText>
+
+        <ImageView
+            android:id="@+id/iv_select"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/tag_selected"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <com.dev.nutclass.view.TagListLayout
+        android:id="@+id/view_tag_list"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/common_15" >
+    </com.dev.nutclass.view.TagListLayout>
+
+
+
+
+</LinearLayout>

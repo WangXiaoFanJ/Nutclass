@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- android:background="@drawable/bottom_item_bg" -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="horizontal" >
+
+    <com.dev.nutclass.view.RoundedImageView
+        android:id="@+id/iv_like"
+        android:layout_marginLeft="@dimen/common_5"
+        android:layout_width="@dimen/item_feed_like_size"
+        android:layout_height="@dimen/item_feed_like_size"
+        android:layout_centerInParent="true"
+        android:src="@drawable/porfile_default_male"
+        app:riv_oval="true" />
+
+</RelativeLayout>

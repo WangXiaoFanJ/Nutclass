@@ -1,0 +1,92 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:attr="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/content_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/bg_main_activity_white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/height_titlebar"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingRight="20dp" >
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/common_15"
+            android:paddingRight="@dimen/common_15"
+            android:src="@drawable/titlebar_back" />
+
+        <LinearLayout
+            android:id="@+id/ll_location"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical|right"
+            android:orientation="horizontal"
+            android:paddingRight="15dp"
+            android:visibility="invisible" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/icon_location_blue" />
+
+            <TextView
+                android:id="@+id/tv_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/common_3"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="电话"
+                android:textColor="@color/color_100"
+                android:textSize="@dimen/font_14" >
+            </TextView>
+        </LinearLayout>
+         <TextView
+            android:id="@+id/tv_comment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/radius_red_dark_bg"
+            android:ellipsize="end"
+            android:paddingBottom="@dimen/common_2"
+            android:paddingLeft="@dimen/common_5"
+            android:paddingRight="@dimen/common_5"
+            android:paddingTop="@dimen/common_2"
+            android:singleLine="true"
+            android:text="评论"
+            android:textColor="@color/color_0"
+            android:textSize="@dimen/font_16" >
+        </TextView>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_size"
+        android:background="@color/list_divider_line" />
+
+   <com.cjj.MaterialRefreshLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/refresh"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        app:isLoadMore="true"
+        app:overlay="false"
+        app:wave_show="false" >
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/card_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </com.cjj.MaterialRefreshLayout>
+
+    
+
+</LinearLayout>
